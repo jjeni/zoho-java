@@ -15,5 +15,6 @@ public static boolean twoPower(int a){
         System.out.println("Enter the first number :");
         int a = sc.nextInt();
         System.out.println(twoPower(a));
+        sc.close();
     }
 }

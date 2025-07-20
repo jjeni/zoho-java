@@ -20,5 +20,6 @@ public class Q4 {
         System.out.println("Enter the second number :");
         int b = sc.nextInt();
         equalOrNot(a, b);
+        sc.close();
     }
 }

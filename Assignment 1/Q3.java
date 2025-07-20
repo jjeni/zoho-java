@@ -15,5 +15,6 @@ public class Q3 {
         System.out.println("Enter the second number :");
         int b = sc.nextInt();
         System.out.println("The Maximum number between "+a+ " and "+b+ " is : " +maxTwo(a, b));
+        sc.close();
     }
 }
