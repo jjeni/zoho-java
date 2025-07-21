@@ -1,10 +1,10 @@
 //1. Write a program that uses if statement to find the minimum of three numbers.
 
-package Assignment2;
+package Assignment2.Part1;
 
 import java.util.Scanner;
 
-public class Q1 {
+public class Part1Q1 {
 
     public static int minOfThree(int a, int b, int c){
         int m = b;
