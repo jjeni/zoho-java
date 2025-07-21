@@ -15,8 +15,7 @@ public class Part1Q3 {
                 }
                 else {
                     System.out.print("  ");
-                }
-                
+                }      
             }
             System.out.println();
         }
