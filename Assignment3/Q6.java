@@ -7,10 +7,8 @@ public class Q6 {
         Employees emp2 = new Employees("Sam", 2000, 60000.0, "68D- WallsStreat");
         Employees emp3 = new Employees("John", 1999, 55000.0, "26B- WallsStreat");
 
-        // Print header
         System.out.format("%-10s %-15s %-20s%n", "Name", "Year of joining", "Address");
-
-        // Print employee details
+       
         emp1.display();
         emp2.display();
         emp3.display();
