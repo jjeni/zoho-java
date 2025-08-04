@@ -1,8 +1,8 @@
 package Assignment4;
 
 class MyString{
+
     private char[] data;
-    
 
     MyString(char[] chars){
         this.data = new char[chars.length];
@@ -165,6 +165,6 @@ public class CustomClass {
         System.out.println("substring : "+name.substring(1, 3));    
         System.out.println("replace : "+name.replace('i', 'y'));  
         System.out.println("contains ; "+name.contains(new MyString("en")));
-        System.out.println("concat : "+name.concat(new MyString("Codes")));
+        System.out.println("concat : "+name.concat(new MyString(", Working on Java Program.")));
     }
 }
