@@ -24,10 +24,10 @@ public class Main {
                     menu = sc.nextInt();
                     sc.nextLine();
                     if (menu < 1 || menu > 4) {
-                        System.out.println("❌ Invalid choice! Please enter 1, 2, 3, or 4.");
+                        System.out.println("Invalid choice! Please enter 1, 2, 3, or 4.");
                     }
                 } else {
-                    System.out.println("❌ Invalid input! Please enter a number.");
+                    System.out.println("Invalid input! Please enter a number.");
                     sc.nextLine(); 
                 }
             }
@@ -46,16 +46,16 @@ public class Main {
                 if (sc.hasNextDouble()) {
                     amount = sc.nextDouble();
                     if (amount <= 0) {
-                        System.out.print("❌ Amount must be greater than zero. Enter again: ");
+                        System.out.print("Amount must be greater than zero. Enter again: ");
                     }
                 } else {
-                    System.out.print("❌ Invalid amount! Enter a number: ");
-                    sc.nextLine(); // clear invalid input
+                    System.out.print("Invalid amount! Enter a number: ");
+                    sc.nextLine(); 
                 }
-                sc.nextLine(); // consume newline
+                sc.nextLine();
             }
 
-            // Create appropriate payment method
+            
             switch (menu) {
                 case 1 -> pm = new CreditCardPayment(recipient);
                 case 2 -> pm = new DebitCardPayment(recipient);
@@ -66,7 +66,6 @@ public class Main {
                 }
             }
 
-            // Make payment
             pm.pay(amount);
         }
 
